@@ -1,0 +1,14 @@
+Old
+Old/IGNORE
+02_Raw_Data/rain
+02_Raw_Data/IMD_Precipitation.nc
+02_Raw_Data/SRTM
+02_Raw_Data/CMIP5 Data
+02_Raw_Data/NCEP_NCAR_Reanalysis1
+03_Preprocess_Data/NC_Files
+03_Preprocess_Data/npy_Files
+03_Preprocess_Data/Stacked
+04_Testing_Stacks/npy_Files
+04_Testing_Stacks/NC_Files
+04_Testing_Stacks/Frames
+04_Testing_Stacks/animations
