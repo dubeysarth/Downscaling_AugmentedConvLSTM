@@ -40,14 +40,22 @@ import h5py
 import itertools
 
 #%%
-def load_dataset(model = None, mon = False):
+def load_dataset(model = None, mon = False, temp = False):
     if mon:
-        Y = np.load(r"/home/uditbhatia/Documents/Sarth/Downscaling_AugmentedConvLSTM/03_Preprocess_Data/Stacked/Y_mon.npy")
-        try:
-            X = np.load(rf"/home/uditbhatia/Documents/Sarth/Downscaling_AugmentedConvLSTM/03_Preprocess_Data/Stacked/{model}_mon.npy")
-        except:
-            print("Models available: MIROC-ESM, CanESM2, HadGEM2-ES, GFDL-CM3")
-            return None, None
+        if temp:
+            Y = np.load(r"/home/uditbhatia/Documents/Sarth/Downscaling_AugmentedConvLSTM/03_Preprocess_Data/Stacked/Y_mon_temp.npy")
+            try:
+                X = np.load(rf"/home/uditbhatia/Documents/Sarth/Downscaling_AugmentedConvLSTM/03_Preprocess_Data/Stacked/{model}_mon_temp.npy")
+            except:
+                print("Models available: MIROC-ESM, CanESM2, GFDL-CM3")
+                return None, None
+        else:
+            Y = np.load(r"/home/uditbhatia/Documents/Sarth/Downscaling_AugmentedConvLSTM/03_Preprocess_Data/Stacked/Y_mon.npy")
+            try:
+                X = np.load(rf"/home/uditbhatia/Documents/Sarth/Downscaling_AugmentedConvLSTM/03_Preprocess_Data/Stacked/{model}_mon.npy")
+            except:
+                print("Models available: MIROC-ESM, CanESM2, HadGEM2-ES, GFDL-CM3")
+                return None, None
     else:
         if model == 'MIROC-ESM':
             X = np.load(r"/home/uditbhatia/Documents/Sarth/Downscaling_AugmentedConvLSTM/03_Preprocess_Data/Stacked/MIROC-ESM.npy")
