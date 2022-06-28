@@ -16,3 +16,8 @@ Tuning_weights
 05_Random_Field_India/Data
 05_Random_Field_India/rf*.npy
 05_Random_Field_India/NC_FIles
+
+06_Incomplete_Information/Data
+06_Incomplete_Information/MIROC-ESM.npy
+06_Incomplete_Information/elev.npy
+06_Incomplete_Information/Graphs
