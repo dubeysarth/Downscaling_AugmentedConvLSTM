@@ -21,3 +21,6 @@ Tuning_weights
 06_Incomplete_Information/MIROC-ESM.npy
 06_Incomplete_Information/elev.npy
 06_Incomplete_Information/Graphs
+
+06_Incomplete_Information/Tuning_weights.ipynb
+06_Incomplete_Information/Generate_Stacks.ipynb
